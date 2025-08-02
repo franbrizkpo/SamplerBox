@@ -24,6 +24,8 @@ You can use a ready-to-use ISO image from the [Releases](https://github.com/jose
     sudo apt update
     sudo apt -y install git python3-pip python3-smbus python3-numpy libportaudio2 
     sudo apt -y install raspberrypi-kernel  # quite long to install, do it only if necessary, it solves a "no sound before 25 second on boot" problem
+    sudo apt-get update
+    sudo apt-get install build-essential libasound-dev libjack-dev  #This steps where added 08/02/2025 (MM/DD/YYYY) because if you don't do it, probably next steps wont work.    
     sudo pip3 install cython cffi sounddevice pyserial
     sudo pip3 install git+https://github.com/SamplerBox/rtmidi-python.git     # now also works for Python3.9+ and Cython3 ; for Windows, see below
     ~~~
